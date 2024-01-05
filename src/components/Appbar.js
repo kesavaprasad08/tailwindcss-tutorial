@@ -8,12 +8,12 @@ const Appbar = () => {
   };
 
   return (
-    <nav className="p-5 ">
-      <div className="md:flex justify-between w-5/6 md:max-w-7xl mx-auto ">
+    <nav className="p-3 bg-black">
+      <div className="md:flex justify-between w-5/6 md:max-w-7xl mx-auto text-white">
         <div className="flex justify-between">
-          <div>
-            <span className="text">KESAVA </span>
-            <span className="text">PRASAD</span>
+          <div className="pt-3">
+            <span>KESAVA </span>
+            <span>PRASAD</span>
           </div>
           <div className="md:hidden">
             <button onClick={menuClicked}>
@@ -23,7 +23,7 @@ const Appbar = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6 "
+                className="w-6 h-6"
               >
                 <path
                   strokeLinecap="round"
@@ -34,19 +34,19 @@ const Appbar = () => {
             </button>
           </div>
         </div>
-        <div className={`flex md:block justify-end ${open ? 'block' : 'hidden'}`}>
-          <ul className="md:flex md:space-x-8 space-y-8 md:space-y-0 p-5">
+        <div className={`flex md:block justify-center text-center  ${open ? 'block pt-5 ' : 'hidden'} `}>
+          <ul className="md:flex md:space-x-8 space-y-8 md:space-y-0 p-0 ">
             <li>
-              <a href="#" className="">Home</a>
+              <a href="#" className="hover:text-slate-400">Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#" className="hover:text-slate-400">About</a>
             </li>
             <li>
-              <a href="#">Skills</a>
+              <a href="#" className="hover:text-slate-400">Skills</a>
             </li>
             <li>
-              <a href="#">Portfolio</a>
+              <a href="#" className="hover:text-slate-400">Portfolio</a>
             </li>
           </ul>
         </div>
